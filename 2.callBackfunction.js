@@ -1,14 +1,28 @@
 // function calling the another function in it is called call back function
 
-// function greet(name,callme){
-//     console.log("hello");
-//     callme(name)
-// }
-// function sayname(myname){
-//     console.log(`My name is ${myname}`);
+function greet(name,callme){
+    console.log("hello");
+    callme(name)
+}
+function sayname(myname){
+    console.log(`My name is ${myname}`);
     
-// }
-// greet("hanzala",sayname)
+}
+greet("hanzala",sayname)
+
+//Addtion of two numbers
+
+function getnumbers(num1,num2,callback){
+    console.log(`The addition of ${num1} and ${num2} is:`);
+    callback(num1,num2)
+    
+}
+function addtwonumbers(num1,num2){
+    console.log(num1+num2);
+    
+}
+
+getnumbers(23,4,addtwonumbers)
 
 //With setTimeout
 
