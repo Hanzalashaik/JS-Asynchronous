@@ -12,11 +12,12 @@ const friedRicePromise=new Promise((resolve,reject)=>{
 
 //consume
 
-friedRicePromise.then((myfriedRice)=>{
+friedRicePromise.then(
+    (myfriedRice)=>{
     console.log("let's eat",myfriedRice);
     
-},
-(error)=>{
+})
+.catch((error)=>{
     console.log(error);
     
 })

@@ -4,13 +4,13 @@ async function weather(){
     let delhiweather=new Promise((reslove,reject)=>{
         setTimeout(()=>{
             reslove("24 degree");
-        },2000)
+        },4000)
     })
 
     let hyderabadweather=new Promise((reslove,reject)=>{
         setTimeout(()=>{
             reslove("21 degree")
-        },4000)
+        },2000)
     })
 
     console.log("Fetching Delhi weather data Please wait .....");
